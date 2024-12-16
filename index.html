@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+   
+        a {
+            text-decoration: none; 
+            color: inherit; 
+        }
+        body {
+            
+            background-image: url(maple-7590861.jpg); 
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat; 
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+        }
+
+        .button{
+            padding: 12px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50; /* Green background */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+
+        .button:hover {
+            background-color: #45a049; 
+            transform: scale(1.1); 
+        }
+        .button:active {
+            background-color: #3e8e41; 
+            transform: scale(1); 
+        }
+    </style>
+    <header class="header">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <nav class="navbar">
+                <button>
+                <a href="#about">About</a> </button>
+            <button> <a href="#projects">Projects</a> </button>
+        <button> <a href="#contact">Contact</a> </button>
+                
+            </nav>
+        </div>
+        
+    </header>
+
+    
+
+    <section id="about" class="section about">
+        <div class="container">
+            <img src="IMG_0532.JPG" alt="Raj Bhattarai" width="300px">
+            <h2>About Me</h2>
+            <p>I am Raj Bhattarai, a passionate cybersecurity student and web developer. With a deep interest in securing digital spaces, I specialize in network security, ethical hacking, and cryptography. In addition to my academic pursuits, I apply my skills in web development, creating secure, user-friendly websites and applications. My goal is to merge the worlds of cybersecurity and web development to build robust systems that are both functional and resilient against cyber threats. Through continuous learning and hands-on experience, I am committed to advancing my expertise in these ever-evolving fields.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Store Management System</h3>
+                    <p>A store management system organizes inventory, sales, and customer transactions efficiently.</p>
+                </div>
+                <div class="project">
+                    <h3>Cryptographic Algorythm</h3>
+                    <p>Cryptographic algorithms secure data through encryption, decryption, and key management processes.</p>
+                </div>
+                <div class="project">
+                    <h3>Brute force attack</h3>
+                    <p>Brute force attack project tests password strength through exhaustive key attempts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Raj Bhattarai. All rights reserved.</p>
+            <a href="https://www.instagram.com/_sike_44/" target="_blank">
+                <div>
+                    <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
+                </div>
+            </a>
+
+            <a href="https://github.com/chickencurry77" target="_blank">
+                <div>
+                    <i class="fa-brands fa-square-github" aria-hidden="true"></i>
+                </div>
+            </a>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+
+
+        </div>
+    </footer>
+</body>
+</html>
